@@ -4,7 +4,7 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Mikkel Folmer Festersen · Portfolio</title>
-  <meta name="description" content="Portfolio for Mikkel Folmer Festersen, tv- og medietilrettelægger fra DMJX. Videograf, videojournalist og klipper.">
+  <meta name="description" content="Portfolio for Mikkel Folmer Festersen, tilrettelægger og videojournalist uddannet fra DMJX.">
   <meta property="og:title" content="Mikkel Folmer Festersen · Portfolio">
   <meta property="og:image" content="img/spritte.jpg">
   <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -48,6 +48,22 @@
     }
     .role { font-size: 1.15rem; color: var(--muted); margin: 0; }
     .role strong { color: var(--accent); font-weight: 500; }
+    .role { margin-bottom: 24px; }
+    .intro { max-width: 64ch; }
+    .intro p { margin: 0 0 12px; }
+    .closer { margin: 20px 0 0; font-weight: 500; }
+    .skills-label { margin: 24px 0 10px; font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase; color: var(--muted); }
+    .skills { list-style: none; padding: 0; margin: 0; display: flex; flex-wrap: wrap; gap: 8px; }
+    .skills li { padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px; background: var(--card); font-size: 0.92rem; }
+    .contact { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 28px; }
+    .btn {
+      display: inline-block; padding: 10px 18px; border-radius: 999px;
+      border: 1px solid var(--line); background: var(--card); color: var(--fg);
+      text-decoration: none; font-weight: 500; overflow-wrap: anywhere;
+    }
+    .btn:hover { border-color: var(--accent); }
+    .btn.primary { background: var(--accent); border-color: var(--accent); color: #fff; }
+    footer a { color: inherit; }
     section { padding: 48px 0; border-bottom: 1px solid var(--line); }
     .tag {
       display: inline-block;
@@ -102,7 +118,26 @@
   <div class="wrap">
     <header>
       <h1>Mikkel Folmer Festersen</h1>
-      <p class="role">Tv- og medietilrettelægger fra DMJX · <strong>videograf, videojournalist og klipper</strong></p>
+      <p class="role"><strong>Tilrettelægger og videojournalist</strong> · Video &amp; Content Producer</p>
+      <div class="intro">
+        <p>Jeg er uddannet TV- og Medietilrettelægger fra Danmarks Medie- og Journalisthøjskole og arbejder med at udvikle og producere visuelt indhold til tv, web og sociale medier.</p>
+        <p>Jeg har erfaring med hele processen fra idé og research til optagelse og klip og er stærk i at finde historier, der engagerer og rammer målgruppen. Jeg har arbejdet med dokumentar, satire og SoMe-content og er vant til at skabe indhold, hvor tempo, dramaturgi og visuel stil spiller sammen.</p>
+        <p>Jeg arbejder både selvstændigt og i teams og er hurtig til at sætte mig ind i nye projekter og få noget til at ske.</p>
+      </div>
+      <p class="skills-label">Jeg kan bl.a. hjælpe med</p>
+      <ul class="skills">
+        <li>Idéudvikling og koncept</li>
+        <li>Research og tilrettelæggelse</li>
+        <li>Kamera og visuel storytelling</li>
+        <li>Redigering i Premiere Pro og After Effects</li>
+        <li>Droneoptagelser</li>
+        <li>Content til sociale medier</li>
+      </ul>
+      <p class="intro closer">Jeg går op i at lave indhold, der ikke bare ser godt ud, men også fungerer.</p>
+      <div class="contact">
+        <a class="btn primary" href="mailto:folmerfestersen@gmail.com">folmerfestersen@gmail.com</a>
+        <a class="btn" href="https://dk.linkedin.com/in/mikkelfolmerfestersen" target="_blank" rel="noopener">LinkedIn</a>
+      </div>
     </header>
 
     <section>
@@ -175,7 +210,7 @@
       </div>
     </section>
 
-    <footer>© Mikkel Folmer Festersen</footer>
+    <footer>Mikkel Folmer Festersen · <a href="mailto:folmerfestersen@gmail.com">folmerfestersen@gmail.com</a> · <a href="https://dk.linkedin.com/in/mikkelfolmerfestersen" target="_blank" rel="noopener">LinkedIn</a></footer>
   </div>
   <script async src="https://www.instagram.com/embed.js"></script>
 </body>
