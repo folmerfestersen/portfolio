@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="da">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mikkel Folmer Festersen · Portfolio</title>
+  <meta name="description" content="Portfolio for Mikkel Folmer Festersen, tv- og medietilrettelægger fra DMJX. Videograf, videojournalist og klipper.">
+  <meta property="og:title" content="Mikkel Folmer Festersen · Portfolio">
+  <meta property="og:image" content="img/spritte.jpg">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700&family=Fraunces:opsz,wght@9..144,600&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg: #f6f4ef;
+      --fg: #1c1b19;
+      --muted: #6b675f;
+      --card: #ffffff;
+      --line: #e3dfd6;
+      --accent: #c2410c;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root {
+        --bg: #141413;
+        --fg: #f1efe9;
+        --muted: #a29d93;
+        --card: #1f1e1c;
+        --line: #2f2d2a;
+        --accent: #fb923c;
+      }
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--fg);
+      font-family: Inter, system-ui, sans-serif;
+      line-height: 1.55;
+    }
+    .wrap { max-width: 960px; margin: 0 auto; padding: 0 16px; }
+    header { padding: 72px 0 40px; border-bottom: 1px solid var(--line); }
+    h1 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: clamp(2.2rem, 6vw, 3.6rem);
+      line-height: 1.05;
+      margin: 0 0 12px;
+      letter-spacing: -0.01em;
+    }
+    .role { font-size: 1.15rem; color: var(--muted); margin: 0; }
+    .role strong { color: var(--accent); font-weight: 500; }
+    section { padding: 48px 0; border-bottom: 1px solid var(--line); }
+    .tag {
+      display: inline-block;
+      font-size: 0.8rem; font-weight: 500; letter-spacing: 0.04em; text-transform: uppercase;
+      color: var(--accent);
+      margin-bottom: 6px;
+    }
+    h2 {
+      font-family: Fraunces, Georgia, serif;
+      font-size: 1.8rem;
+      line-height: 1.15;
+      margin: 0 0 8px;
+    }
+    .lead { color: var(--muted); margin: 0 0 20px; max-width: 62ch; }
+    .note { font-size: 0.9rem; font-style: italic; }
+    .cover {
+      display: block;
+      width: 100%;
+      aspect-ratio: 16 / 9;
+      object-fit: cover;
+      border-radius: 14px;
+      border: 1px solid var(--line);
+      margin-bottom: 20px;
+      background: var(--card);
+    }
+    .cover.logo { aspect-ratio: auto; max-height: 220px; object-fit: contain; background: #000; }
+    .links { display: grid; gap: 12px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+    a.card {
+      display: flex; justify-content: space-between; align-items: center; gap: 12px;
+      padding: 16px 20px;
+      background: var(--card);
+      border: 1px solid var(--line);
+      border-radius: 12px;
+      color: var(--fg);
+      text-decoration: none;
+      font-weight: 500;
+      transition: border-color .15s, transform .15s;
+    }
+    a.card:hover { border-color: var(--accent); transform: translateY(-2px); }
+    a.card span.src { color: var(--muted); font-weight: 400; font-size: 0.9rem; display: block; }
+    a.card .arrow { color: var(--accent); font-size: 1.3rem; }
+    .videos { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); }
+    .videos iframe {
+      width: 100%; aspect-ratio: 16 / 9; border: 0; border-radius: 12px; background: #000;
+    }
+    .insta { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); align-items: start; }
+    .insta blockquote.instagram-media { margin: 0 !important; min-width: 0 !important; width: 100% !important; }
+    footer { padding: 32px 0 56px; color: var(--muted); font-size: 0.9rem; }
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <h1>Mikkel Folmer Festersen</h1>
+      <p class="role">Tv- og medietilrettelægger fra DMJX · <strong>videograf, videojournalist og klipper</strong></p>
+    </header>
+
+    <section>
+      <span class="tag">Dokumentarserie · TV Syd</span>
+      <h2>Æ Spritte – et flydende fællesskab</h2>
+      <p class="lead">Dokumentarserien om spritbådene i Sønderjylland, sendt på TV Syd.</p>
+      <img class="cover" src="img/spritte.jpg" alt="Plakat for Æ Spritte – et flydende fællesskab" loading="lazy">
+      <div class="links">
+        <a class="card" href="https://play.tv2.dk/serie/ae-spritte-et-flydende-faellesskab-tvsyd" target="_blank" rel="noopener">
+          <div>Se serien<span class="src">TV 2 Play</span></div><span class="arrow">→</span>
+        </a>
+        <a class="card" href="https://www.tvsyd.dk/et-flydende-faellesskab" target="_blank" rel="noopener">
+          <div>Om serien<span class="src">tvsyd.dk</span></div><span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <span class="tag">DIT og dronefotograf · TV 2</span>
+      <h2>Først til verdens ende, sæson 6</h2>
+      <p class="lead">Jeg var med på turen som DIT og dronefotograf. Mine dronebilleder kan især ses i afsnit 4.</p>
+      <img class="cover" src="img/forst-til-verdens-ende.jpg" alt="Plakat for Først til verdens ende" loading="lazy">
+      <div class="links">
+        <a class="card" href="https://play.tv2.dk/serie/foerst-til-verdens-ende-tv2/6" target="_blank" rel="noopener">
+          <div>Se sæson 6<span class="src">TV 2 Play</span></div><span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <span class="tag">Udvikling, tilrettelæggelse og foto · DR Ung</span>
+      <h2>Klam</h2>
+      <p class="lead">Projektet jeg udviklede, tilrettelagde og filmede på under min tid på DR Ung.</p>
+      <img class="cover" src="img/klam.jpg" alt="Plakat for Klam" loading="lazy">
+      <div class="links">
+        <a class="card" href="https://www.dr.dk/drtv/serie/klam_494237" target="_blank" rel="noopener">
+          <div>Se Klam<span class="src">DRTV</span></div><span class="arrow">→</span>
+        </a>
+      </div>
+    </section>
+
+    <section>
+      <span class="tag">Klip · SoMe og YouTube</span>
+      <h2>Forlaget Cobolt</h2>
+      <p class="lead">Jeg har klippet en række SoMe-videoer for Forlaget Cobolt ud fra materiale, de på forhånd havde filmet med forlagets forfattere. Videoerne blev lavet både i short form og i længere versioner til YouTube.</p>
+      <div class="videos">
+        <iframe src="https://www.youtube-nocookie.com/embed/bpjLyToZB0M" title="Forlaget Cobolt, video 1" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+        <iframe src="https://www.youtube-nocookie.com/embed/9Yf0uILWgwE" title="Forlaget Cobolt, video 2" loading="lazy" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture; fullscreen" allowfullscreen></iframe>
+      </div>
+    </section>
+
+    <section>
+      <span class="tag">SoMe-indhold · 24syv</span>
+      <h2>24syv</h2>
+      <p class="lead">Udvalgt SoMe-indhold fra min tid på 24syv. <span class="note">Meget er desværre slettet efter lukningen af radioen.</span></p>
+      <img class="cover logo" src="img/24syv.jpg" alt="24syv-logo" loading="lazy">
+      <div class="insta">
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C2kBh2ssr2Z/" data-instgrm-version="14">
+          <a href="https://www.instagram.com/p/C2kBh2ssr2Z/" target="_blank" rel="noopener">Se opslaget på Instagram</a>
+        </blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C2K6QBVMOK8/" data-instgrm-version="14">
+          <a href="https://www.instagram.com/p/C2K6QBVMOK8/" target="_blank" rel="noopener">Se opslaget på Instagram</a>
+        </blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/C0oI_ZDhZhB/" data-instgrm-version="14">
+          <a href="https://www.instagram.com/p/C0oI_ZDhZhB/" target="_blank" rel="noopener">Se opslaget på Instagram</a>
+        </blockquote>
+        <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/CxIiCXxM5CY/" data-instgrm-version="14">
+          <a href="https://www.instagram.com/p/CxIiCXxM5CY/" target="_blank" rel="noopener">Se opslaget på Instagram</a>
+        </blockquote>
+      </div>
+    </section>
+
+    <footer>© Mikkel Folmer Festersen</footer>
+  </div>
+  <script async src="https://www.instagram.com/embed.js"></script>
+</body>
+</html>
